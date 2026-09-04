@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desak Maknyis - Layanan Katering Makanan Nusantara & Harian Terpercaya</title>
+  <meta name="description" content="Layanan Katering Makanan Desak Maknyis. Nasi Kotak, Prasmanan Acara, Tumpeng Mini, dan Snack Box Lezat dengan Cita Rasa Rempah Otentik. Pesan Sekarang!">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       SITE HEADER / NAVBAR (Pixel-match to reference)
+       ========================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">🍲</div>
+        <span>Desak Maknyis</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#katalog" class="nav-link">Katalog Menu</a></li>
+        <li><a href="#katalog" class="nav-link">Paket Bento</a></li>
+        <li><a href="#kalkulator" class="nav-link">Katering Harian</a></li>
+        <li><a href="#katalog" class="nav-link nav-link-highlight">Prasmanan</a></li>
+        <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button class="lang-btn" title="Pilih Bahasa / Lokasi">
+          <span>🌐</span>
+          <span>ID</span>
+        </button>
+        <span class="login-link">Masuk</span>
+        <button class="btn-cta-primary" id="btnNavCta">Pesan Sekarang</button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Buka Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION (Matching Reference Screenshot 1:1)
+       ========================================== -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      
+      <!-- HERO LEFT COLUMN -->
+      <div class="hero-left">
+        <!-- Badge Tag -->
+        <div class="hero-badge-platform">
+          <span>🍱</span>
+          <span>PREMIUM CATERING SERVICE</span>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="hero-title">
+          Mau Acara Sukses?<br>
+          Makanan Enak Sekarang<br>
+          <span class="highlight-block">Lebih Maknyis.</span>
+        </h1>
+
+        <!-- Category Pill Badges -->
+        <div class="hero-pill-tags">
+          <span class="pill-tag pill-blue">NASI KOTAK</span>
+          <span class="pill-tag pill-dark">PRASMANAN</span>
+          <span class="pill-tag pill-green">TUMPENG & SNACK</span>
+        </div>
+
+        <!-- Persuasive Subtext -->
+        <p class="hero-desc">
+          Bukan cuma sekadar katering biasa. Nikmati sajian higienis berbahan segar premium, porsi mantap, dan bumbu rempah otentik khas Bali & Nusantara yang bikin setiap tamu tersenyum puas!
+        </p>
+
+        <!-- Dual CTA Buttons -->
+        <div class="hero-actions">
+          <button class="btn-hero-dark" id="btnHeroBooking">
+            <span>🍽️</span>
+            <span>Booking Sekarang</span>
+          </button>
+          <a href="#katalog" class="btn-hero-white">
+            <span>▷</span>
+            <span>Lihat Menu Lengkap</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- HERO RIGHT COLUMN (INTERACTIVE SHOWCASE CARD) -->
+      <div class="hero-right">
+        <div class="showcase-wrapper">
+          <!-- Overlapping Floating Badges -->
+          <div class="floating-badge-rating">
+            <span>★</span>
+            <span>4.9 RATING</span>
+          </div>
+          <div class="floating-badge-category">
+            <span>🍱</span>
+            <span>CATERING PILIHAN</span>
+          </div>
+
+          <!-- Main Featured Card Frame -->
+          <div class="showcase-card">
+            
+            <!-- Card Header with Navigation Arrows -->
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="flame-icon">🔥</span>
+                <span>MENU TERBARU & TRENDING</span>
+              </div>
+              <div class="card-nav-buttons">
+                <button class="nav-arrow-btn" id="btnPrevShowcase" aria-label="Menu Sebelumnya">&lt;</button>
+                <button class="nav-arrow-btn" id="btnNextShowcase" aria-label="Menu Berikutnya">&gt;</button>
+              </div>
+            </div>
+
+            <!-- Featured Dish Split Layout -->
+            <div class="featured-content">
+              <!-- Left Dish Image -->
+              <div class="featured-image-box">
+                <img id="featuredImg" src="assets/img/dish_ayam_betutu.jpg" alt="Ayam Bakar Betutu Bali">
+                <div class="image-badge-status" id="featuredStatusBadge">SEDANG PROMO</div>
+                <div class="image-badge-match" id="featuredMatchBadge">98% Suka</div>
+              </div>
+
+              <!-- Right Dish Details -->
+              <div class="featured-details">
+                <div>
+                  <div class="meta-tags-row">
+                    <div id="featuredCategoryTags" style="display: flex; gap: 6px;">
+                      <span class="tag-spec">PRASMANAN</span>
+                      <span class="tag-spec">AYAM BETUTU</span>
+                    </div>
+                    <span class="tag-meta-info" id="featuredPaxInfo">· 50-500 Porsi</span>
+                  </div>
+
+                  <h2 class="featured-title" id="featuredTitle">Paket Sultan: Ayam Bakar Betutu & Sambal Matah</h2>
+                  
+                  <div class="featured-rating">
+                    <span id="featuredRating"><span class="star">★</span> 4.9 / 5.0</span>
+                    <span class="event-count" id="featuredReviewCount">(2,400+ Porsi Terjual · Halal & Higienis)</span>
+                  </div>
+
+                  <p class="featured-quote" id="featuredQuote">
+                    "Bumbu rempah meresap sampai ke tulang, sambal matah segar harum kecombrang, bikin semua tamu terkesan!"
+                  </p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="card-actions-row">
+                  <button class="btn-card-order" id="btnOrderShowcase">
+                    <span>🍽️</span>
+                    <span>Pesan Paket</span>
+                  </button>
+                  <a href="#katalog" class="btn-card-detail">
+                    <span>▷</span>
+                    <span>Detail Menu</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom 5 Thumbnails Carousel (Exact layout from screenshot) -->
+            <div class="thumbnails-container">
+              <div class="thumb-item active" data-index="0" title="Ayam Bakar Betutu">
+                <img src="assets/img/dish_ayam_betutu.jpg" alt="Ayam Bakar Betutu">
+              </div>
+              <div class="thumb-item" data-index="1" title="Tumpeng Mini Kuning">
+                <img src="assets/img/dish_tumpeng.jpg" alt="Tumpeng Mini Kuning">
+              </div>
+              <div class="thumb-item" data-index="2" title="Bento Rendang Komplit">
+                <img src="assets/img/dish_nasi_kotak.jpg" alt="Bento Rendang Komplit">
+              </div>
+              <div class="thumb-item" data-index="3" title="Grand Buffet Prasmanan">
+                <img src="assets/img/dish_prasmanan.jpg" alt="Grand Buffet Prasmanan">
+              </div>
+              <div class="thumb-item" data-index="4" title="Artisan Snack Box">
+                <img src="assets/img/dish_snack_box.jpg" alt="Artisan Snack Box">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MENU CATALOG SECTION WITH FILTER
+       ========================================== -->
+  <section class="section-padding" id="katalog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Katalog Pilihan</span>
+        <h2 class="section-title">Menu Katering Terlengkap & Terlaris</h2>
+        <p class="section-desc">Pilih paket sesuai kebutuhan acaramu, mulai dari syukuran keluarga hingga resepsi dan corporate gathering berskala ribuan tamu.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua Menu</button>
+        <button class="filter-btn" data-filter="bento">Nasi Kotak / Bento</button>
+        <button class="filter-btn" data-filter="prasmanan">Prasmanan</button>
+        <button class="filter-btn" data-filter="tumpeng">Tumpeng Mini</button>
+        <button class="filter-btn" data-filter="snack">Snack Box</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+        <!-- Item 1 -->
+        <div class="menu-card" data-category="bento">
+          <div class="menu-card-img-wrap">
+            <img src="assets/img/dish_nasi_kotak.jpg" alt="Bento Nasi Kotak Rendang">
+            <span class="menu-card-badge">POPULER</span>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Nasi Kotak / Bento</span>
+            <h3 class="menu-card-title">Paket Nasi Kotak Rendang Komplit</h3>
+            <p class="menu-card-items">Nasi kuning/putih, rendang sapi empuk, perkedel kentang, sambal balado, tumis buncis bakso, sambal terasi, lalapan segar.</p>
+            <div class="menu-card-footer">
+              <div class="menu-card-price">
+                <span class="price-label">Mulai dari</span>
+                <span class="price-value">Rp 35.000</span>
+              </div>
+              <button class="btn-menu-order" data-menu="Paket Nasi Kotak Rendang Komplit">Pesan Paket</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-card" data-category="tumpeng">
+          <div class="menu-card-img-wrap">
+            <img src="assets/img/dish_tumpeng.jpg" alt="Tumpeng Mini Selera Nusantara">
+            <span class="menu-card-badge">BEST SELLER</span>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Tumpeng Mini</span>
+            <h3 class="menu-card-title">Tumpeng Mini Selera Nusantara</h3>
+            <p class="menu-card-items">Nasi kuning cetak kerucut, ayam suwir pedas manis, telur balado, orek tempe kacang, timun tomat, sambal bajak, wadah bambu estetik.</p>
+            <div class="menu-card-footer">
+              <div class="menu-card-price">
+                <span class="price-label">Mulai dari</span>
+                <span class="price-value">Rp 42.000</span>
+              </div>
+              <button class="btn-menu-order" data-menu="Tumpeng Mini Selera Nusantara">Pesan Paket</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-card" data-category="prasmanan">
+          <div class="menu-card-img-wrap">
+            <img src="assets/img/dish_ayam_betutu.jpg" alt="Paket Prasmanan Betutu Bali">
+            <span class="menu-card-badge">CHEF SPECIAL</span>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Prasmanan</span>
+            <h3 class="menu-card-title">Prasmanan Ayam Betutu & Sate Lilit</h3>
+            <p class="menu-card-items">Ayam betutu panggang, sate lilit ikan tenggiri, sayur urap daun singkong, sambal matah & mbe, nasi daun pisang, kuah rempah.</p>
+            <div class="menu-card-footer">
+              <div class="menu-card-price">
+                <span class="price-label">Mulai dari</span>
+                <span class="price-value">Rp 65.000</span>
+              </div>
+              <button class="btn-menu-order" data-menu="Prasmanan Ayam Betutu & Sate Lilit">Pesan Paket</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-card" data-category="prasmanan">
+          <div class="menu-card-img-wrap">
+            <img src="assets/img/dish_prasmanan.jpg" alt="Grand Buffet Royal Wedding">
+            <span class="menu-card-badge">PREMIUM</span>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Prasmanan</span>
+            <h3 class="menu-card-title">Grand Buffet Royal Wedding & Gala</h3>
+            <p class="menu-card-items">8 menu utama (daging, ayam, seafood, sup, sayur), dessert station, live cooking stall, pramusaji profesional, perlengkapan lengkap.</p>
+            <div class="menu-card-footer">
+              <div class="menu-card-price">
+                <span class="price-label">Mulai dari</span>
+                <span class="price-value">Rp 85.000</span>
+              </div>
+              <button class="btn-menu-order" data-menu="Grand Buffet Royal Wedding & Gala">Pesan Paket</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-card" data-category="snack">
+          <div class="menu-card-img-wrap">
+            <img src="assets/img/dish_snack_box.jpg" alt="Snack Box Artisan Jajanan Pasar">
+            <span class="menu-card-badge">FAVORIT RAPAT</span>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Snack Box</span>
+            <h3 class="menu-card-title">Snack Box Artisan Jajanan Pasar</h3>
+            <p class="menu-card-items">Pastel renyah isi ragout ayam telur, risoles mayo gurih creamy, lemper ayam bungkus daun, fruit tartlet segar, air mineral kemasan.</p>
+            <div class="menu-card-footer">
+              <div class="menu-card-price">
+                <span class="price-label">Mulai dari</span>
+                <span class="price-value">Rp 18.000</span>
+              </div>
+              <button class="btn-menu-order" data-menu="Snack Box Artisan Jajanan Pasar">Pesan Paket</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-card" data-category="bento">
+          <div class="menu-card-img-wrap">
+            <img src="assets/img/dish_ayam_betutu.jpg" alt="Nasi Kotak Ayam Bakar Madu">
+            <span class="menu-card-badge">HEMAT</span>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Nasi Kotak / Bento</span>
+            <h3 class="menu-card-title">Nasi Kotak Ayam Bakar Bumbu Madu</h3>
+            <p class="menu-card-items">Ayam bakar bumbu madu legit, tahu tempe bacem gurih, tumis kangkung terasi, sambal terasi matang, lalapan segar, kerupuk udang.</p>
+            <div class="menu-card-footer">
+              <div class="menu-card-price">
+                <span class="price-label">Mulai dari</span>
+                <span class="price-value">Rp 30.000</span>
+              </div>
+              <button class="btn-menu-order" data-menu="Nasi Kotak Ayam Bakar Bumbu Madu">Pesan Paket</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE EVENT BUDGET CALCULATOR
+       ========================================== -->
+  <section class="section-padding" id="kalkulator" style="background-color: #f1f5f9; border-top: 2px solid #0f172a; border-bottom: 2px solid #0f172a;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kalkulator Cepat</span>
+        <h2 class="section-title">Hitung Estimasi Anggaran Acaramu</h2>
+        <p class="section-desc">Dapatkan perkiraan biaya katering secara transparan, langsung dengan diskon otomatis untuk pemesanan jumlah besar!</p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="calc-sticker">HEMAT HINGGA 10%</div>
+        
+        <!-- Left: Form Controls -->
+        <div class="calc-controls">
+          <!-- Package Choice -->
+          <div class="calc-group">
+            <label class="calc-label" for="calcPackage">1. Pilih Paket Katering:</label>
+            <select class="calc-select" id="calcPackage">
+              <option value="30000" data-price="30000">Nasi Kotak Hemat Ayam Bakar (Rp 30.000 / pax)</option>
+              <option value="35000" data-price="35000" selected>Nasi Kotak Rendang Komplit (Rp 35.000 / pax)</option>
+              <option value="42000" data-price="42000">Tumpeng Mini Selera Nusantara (Rp 42.000 / pax)</option>
+              <option value="65000" data-price="65000">Prasmanan Tradisional Nusantara (Rp 65.000 / pax)</option>
+              <option value="85000" data-price="85000">Grand Buffet Royal Wedding (Rp 85.000 / pax)</option>
+              <option value="18000" data-price="18000">Snack Box Artisan 3 Kue + Minum (Rp 18.000 / pax)</option>
+            </select>
+          </div>
+
+          <!-- Pax Slider -->
+          <div class="calc-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <label class="calc-label" style="margin-bottom: 0;">2. Jumlah Porsi Tamu:</label>
+              <span class="pax-badge" id="calcPaxBadge">50 Pax</span>
+            </div>
+            <div class="slider-container">
+              <input type="range" min="20" max="500" step="5" value="50" class="range-slider" id="calcPaxSlider">
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #64748b; font-weight: 700; margin-top: 6px;">
+              <span>Min. 20 Pax</span>
+              <span>100 Pax (Diskon 5%)</span>
+              <span>300+ Pax (Diskon 10%)</span>
+              <span>500 Pax</span>
+            </div>
+          </div>
+
+          <!-- Extra Options -->
+          <div class="calc-group">
+            <label class="calc-label">3. Menu Tambahan (Opsional):</label>
+            <div class="extras-grid">
+              <label class="checkbox-card">
+                <input type="checkbox" class="calc-extra-checkbox" data-name="Es Kelapa Jeruk Segar" data-price="5000">
+                <span>Es Kelapa Jeruk (+5rb/pax)</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" class="calc-extra-checkbox" data-name="Aneka Pudding Buah" data-price="6000">
+                <span>Aneka Pudding Buah (+6rb/pax)</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" class="calc-extra-checkbox" data-name="Buah Potong Segar" data-price="4000">
+                <span>Buah Potong Segar (+4rb/pax)</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" class="calc-extra-checkbox" data-name="Pramusaji Khusus" data-price="3000">
+                <span>Pramusaji Khusus (+3rb/pax)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Summary Card -->
+        <div class="calc-summary-card">
+          <div>
+            <h3 class="summary-title">Ringkasan Estimasi</h3>
+            
+            <div class="summary-row">
+              <span>Paket Terpilih:</span>
+              <span id="summaryPackageName" style="font-weight: 700; text-align: right; max-width: 55%;">Nasi Kotak Rendang Komplit</span>
+            </div>
+            <div class="summary-row">
+              <span>Total Porsi:</span>
+              <span id="summaryPaxCount" style="font-weight: 700;">50 Porsi</span>
+            </div>
+            <div class="summary-row">
+              <span>Harga per Porsi:</span>
+              <span id="summaryPricePerPax" style="font-weight: 700;">Rp 35.000 / pax</span>
+            </div>
+            <div class="summary-row">
+              <span>Diskon Porsi:</span>
+              <span id="summaryDiscount" style="font-weight: 700; color: #4ade80;">Rp 0</span>
+            </div>
+            
+            <div class="summary-row total-row">
+              <span>Total Perkiraan:</span>
+              <span class="total-amount" id="summaryTotal">Rp 1.750.000</span>
+            </div>
+          </div>
+
+          <a href="#" target="_blank" class="btn-calc-checkout" id="btnSendCalcWA">
+            <span>💬</span>
+            <span>Kirim Rincian ke WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WHY CHOOSE US / BENEFITS (4 Neo-Brutal Cards)
+       ========================================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Jaminan Kualitas</span>
+        <h2 class="section-title">Kenapa Harus Desak Maknyis?</h2>
+        <p class="section-desc">Komitmen kami untuk memberikan pengalaman kuliner terbaik bagi Anda dan tamu istimewa Anda.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card">
+          <div class="benefit-icon icon-yellow">🌿</div>
+          <h3 class="benefit-title">Bahan Segar Pasar Subuh</h3>
+          <p class="benefit-desc">Sayuran, daging, dan bumbu rempah dibeli segar setiap subuh langsung dari petani lokal tanpa bahan pengawet kimiawi.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-card">
+          <div class="benefit-icon icon-green">📜</div>
+          <h3 class="benefit-title">100% Halal & Bersertifikat</h3>
+          <p class="benefit-desc">Dapur produksi higienis berstandar sanitasi ketat, seluruh bahan baku memiliki sertifikasi halal resmi yang terjamin.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-card">
+          <div class="benefit-icon icon-blue">⏱️</div>
+          <h3 class="benefit-title">Garansi Tepat Waktu</h3>
+          <p class="benefit-desc">Makanan dan kru kami tiba minimal 1 jam sebelum jadwal acaramu. Kami menjamin makanan disajikan fresh dan hangat.</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="benefit-card">
+          <div class="benefit-icon icon-purple">🍲</div>
+          <h3 class="benefit-title">Free Test Food Acara</h3>
+          <p class="benefit-desc">Untuk pemesanan prasmanan di atas 100 porsi, kami sediakan sesi test food gratis langsung di rumah atau kantor Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS (Neo-Brutal Review Cards)
+       ========================================== -->
+  <section class="section-padding" id="testimoni" style="background-color: #f8fafc; border-top: 2px solid #0f172a;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kata Mereka</span>
+        <h2 class="section-title">Lebih dari 1.500 Acara Sukses</h2>
+        <p class="section-desc">Dengarkan cerita kepuasan dari ribuan pelanggan yang mempercayakan hidangan acara mereka pada Desak Maknyis.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testi 1 -->
+        <div class="testi-card">
+          <div>
+            <div class="testi-rating">★★★★★</div>
+            <p class="testi-quote">
+              "Pesan 350 porsi untuk acara gathering kantor BUMN kami. Tamu-tamu pada puji rasa Ayam Bakar Betutu dan sambal matanya yang nagih banget. Pengiriman tepat waktu!"
+            </p>
+          </div>
+          <div class="testi-author">
+            <div class="author-avatar">RD</div>
+            <div class="author-info">
+              <h4>Rangga Dewantara</h4>
+              <p>HR Manager, Telkom Corporate</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 2 -->
+        <div class="testi-card">
+          <div>
+            <div class="testi-rating">★★★★★</div>
+            <p class="testi-quote">
+              "Tumpeng mini buat syukuran rumah baru bentuknya rapi banget! Nasi kuningnya gurih pulen, lauknya melimpah. Tamu keluarga pada minta kontak kateringnya."
+            </p>
+          </div>
+          <div class="testi-author">
+            <div class="author-avatar" style="background-color: #00c984;">SA</div>
+            <div class="author-info">
+              <h4>Siti Anggraini</h4>
+              <p>Ibu Rumah Tangga, BSD City</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 3 -->
+        <div class="testi-card">
+          <div>
+            <div class="testi-rating">★★★★★</div>
+            <p class="testi-quote">
+              "Prasmanan resepsi pernikahan kami sukses besar berkat Desak Maknyis. Tim pramusaji sigap, makanan hangat terus, dan setup mejanya super rapi dan elegan!"
+            </p>
+          </div>
+          <div class="testi-author">
+            <div class="author-avatar" style="background-color: #8b5cf6; color: white;">KP</div>
+            <div class="author-info">
+              <h4>Kevin & Priscillia</h4>
+              <p>Wedding Reception, Jakarta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ SECTION
+       ========================================== -->
+  <section class="section-padding" id="faq" style="border-top: 2px solid #0f172a;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Paling Sering Ditanyakan</span>
+        <h2 class="section-title">Pertanyaan Seputar Pemesanan</h2>
+        <p class="section-desc">Semua informasi penting yang Anda perlukan sebelum melakukan pemesanan.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Berapa hari sebelum acara pemesanan harus dilakukan?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            Untuk paket Nasi Kotak dan Tumpeng Mini, pemesanan dapat dilakukan H-2 sebelum acara. Sedangkan untuk paket Prasmanan dan Wedding, kami sarankan H-7 agar tim kami dapat mempersiapkan logistik dan dekorasi secara maksimal.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah ada batasan minimum porsi pemesanan?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            Minimum pemesanan untuk Nasi Kotak adalah 20 box, Tumpeng Mini 20 pax, Snack Box 25 pax, dan untuk Prasmanan Buffet minimum 50 porsi.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Bagaimana dengan sistem pembayaran dan DP?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            Pemesanan dinyatakan terkunci dengan pembayaran DP sebesar 50%. Pelunasan dapat dilakukan H-1 sebelum acara atau saat makanan tiba (COD khusus pesanan corporate dengan PO resmi).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah melayani pengiriman ke seluruh wilayah Jabodetabek?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            Ya, kami melayani pengiriman ke seluruh wilayah Jakarta, Bogor, Depok, Tangerang, dan Bekasi dengan armada berpendingin dan box termal khusus agar makanan tetap hangat dan higienis.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="brand-icon">🍲</div>
+            <span>Desak Maknyis</span>
+          </a>
+          <p class="footer-desc">
+            Solusi katering makanan terpercaya dengan sentuhan bumbu rempah otentik Nusantara. Menghadirkan kelezatan sejati di setiap momen istimewa Anda.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon" aria-label="WhatsApp">💬</a>
+            <a href="#" class="social-icon" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+          </div>
+        </div>
+
+        <!-- Menu Links -->
+        <div>
+          <h4 class="footer-title">Paket Katering</h4>
+          <ul class="footer-links">
+            <li><a href="#katalog">Nasi Kotak Premium</a></li>
+            <li><a href="#katalog">Prasmanan Wedding</a></li>
+            <li><a href="#katalog">Tumpeng Mini Tradisional</a></li>
+            <li><a href="#katalog">Snack Box Coffee Break</a></li>
+            <li><a href="#katalog">Katering Harian Karyawan</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div>
+          <h4 class="footer-title">Perusahaan</h4>
+          <ul class="footer-links">
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#testimoni">Testimoni Klien</a></li>
+            <li><a href="#faq">Pusat Bantuan / FAQ</a></li>
+            <li><a href="#">Sertifikasi Halal</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="footer-title">Hubungi Kami</h4>
+          <ul class="footer-links">
+            <li>📍 Jl. Kuliner Maknyis No. 88, Kebayoran Baru, Jakarta Selatan</li>
+            <li>📞 WhatsApp: 0812-3456-7890</li>
+            <li>✉️ order@desakmaknyis.com</li>
+            <li>⏰ Buka Setiap Hari: 07.00 - 21.00 WIB</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Desak Maknyis Catering. All rights reserved. Desain Neo-Brutalism Modern.</p>
+        <p>Dibuat dengan ❤️ & bumbu rempah pilihan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON
+       ========================================== -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Desak%20Maknyis,%20saya%20mau%20tanya%20paket%20katering" target="_blank" class="floating-wa-btn">
+    <span style="font-size: 1.3rem;">💬</span>
+    <span>Chat WhatsApp</span>
+  </a>
+
+  <!-- ==========================================
+       QUICK ORDER MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup">&times;</button>
+      
+      <div style="margin-bottom: 20px;">
+        <span class="section-tag" style="margin-bottom: 8px;">Pemesanan Cepat</span>
+        <h3 style="font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 900; color: #0f172a;">Formulir Reservasi Katering</h3>
+        <p style="font-size: 0.88rem; color: #64748b;">Isi data singkat berikut dan pesanan Anda akan langsung kami proses via WhatsApp resmi.</p>
+      </div>
+
+      <form id="quickOrderForm">
+        <div class="form-group">
+          <label class="form-label" for="orderNameInput">Nama Lengkap</label>
+          <input type="text" id="orderNameInput" class="form-input" placeholder="Contoh: Ibu Rina / Bpk. David" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderPhoneInput">Nomor WhatsApp</label>
+          <input type="tel" id="orderPhoneInput" class="form-input" placeholder="Contoh: 081298765432" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderMenuInput">Paket Menu yang Dipilih</label>
+          <input type="text" id="orderMenuInput" class="form-input" value="Paket Sultan: Ayam Bakar Betutu" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="orderPaxInput">Jumlah Porsi</label>
+            <input type="number" id="orderPaxInput" class="form-input" value="50" min="10" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="orderDateInput">Tanggal Acara</label>
+            <input type="date" id="orderDateInput" class="form-input" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderNoteInput">Catatan Khusus (Opsional)</label>
+          <input type="text" id="orderNoteInput" class="form-input" placeholder="Contoh: Tidak terlalu pedas / Kirim jam 10 pagi">
+        </div>
+
+        <button type="submit" class="btn-form-submit">
+          <span>🚀</span>
+          <span>Lanjutkan Pesanan ke WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
