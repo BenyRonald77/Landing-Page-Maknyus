@@ -1,5 +1,5 @@
 /**
- * DESAK MAKNYIS - NEO-BRUTALISM CATERING INTERACTIVE LOGIC
+ * DESAK MAKNYUS - NEO-BRUTALISM CATERING INTERACTIVE LOGIC
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const waNumber = "6281234567890"; // Mock catering WA hotline
       const extrasText = selectedExtras.length > 0 ? selectedExtras.join(', ') : 'Tidak ada';
       const waMessage = encodeURIComponent(
-        `Halo Tim Katering Desak Maknyis! 👋\n\n` +
+        `Halo Tim Katering Desak Maknyus! 👋\n\n` +
         `Saya ingin konsultasi pemesanan katering dengan rincian berikut:\n` +
         `🍱 Paket: ${packageName}\n` +
         `👥 Jumlah: ${pax} Porsi\n` +
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (btnNavCta) {
-    btnNavCta.addEventListener('click', () => openOrderModal('Paket Spesial Desak Maknyis'));
+    btnNavCta.addEventListener('click', () => openOrderModal('Paket Spesial Desak Maknyus'));
   }
 
   menuOrderButtons.forEach(btn => {
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const waNumber = "6281234567890";
       const message = encodeURIComponent(
-        `Halo Desak Maknyis, saya ingin pesan katering:\n\n` +
+        `Halo Desak Maknyus, saya ingin pesan katering:\n\n` +
         `👤 Nama: ${name}\n` +
         `📞 No. WhatsApp: ${phone}\n` +
         `🍱 Pilihan Paket: ${menu}\n` +
